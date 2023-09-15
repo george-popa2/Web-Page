@@ -1,0 +1,168 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#text-container {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+.menu_div{
+    width: 100%;
+    background-color: rgb(33, 33, 255);
+    height: 80px; /* 80 -> 600 */
+    display: flex;
+    /* justify-content:space-around; */
+    flex-direction: column;
+    transition: 0.5s;
+}
+.main_menu_div{
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    margin-bottom: 0px;
+}
+
+#image_logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 10vw;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+#image_logo:hover{
+    
+    width: 65px;
+    height: 65px;
+    margin-top: 8px;
+    margin-right: -10vw;
+}
+
+#company_name{
+    font-size: 35px;
+    color: white;
+    transition: 1s;
+    margin-left: -10vw;
+    transition-delay: 0.2s;
+}
+#company_name:hover{
+    
+}
+
+#image_menu{
+    width: 45px;
+    height: 35px;
+    margin-right:10px;
+    margin-top: 22px;
+    transition: 1.5s;
+}
+
+.open_menu{
+    height: 550px;
+    border-radius: 25px;
+}
+
+
+
+
+.menu_link_div{
+    margin-top: 100px;
+    display: block;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.link_anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.2s;
+}
+.link_anchor:hover{
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+.link_div{
+    margin: 10px;
+}
+.show_links{
+    display: block;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+.hide_links{
+    display: none;
+}
+
+/* SECOND SECTION ==========================================================================*/
+
+.second_section{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* background-color: rgb(255, 197, 5); */
+}
+#floating_logo_div{
+    margin-right: 40px;
+}
+#floating_image_logo{
+    width: 160px;
+    height: 160px;
+    border-radius: 36px;
+    box-shadow: 5px 50px 50px 1px;
+    margin-top: 60px;
+}
+
+#text_holder_div{
+    /* background-color: rgb(255, 255, 255); */
+    margin-top: 90px;
+}
+
+#span_company_name{
+    margin-top: 20px;
+    font-size: 60px;
+    white-space: nowrap;
+}
+#text_overlay {
+    width: 50vw;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+@media screen and (max-width: 480px) {
+    /* Styles for majority of phones */
+    .second_section{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+   
+    #span_company_name{
+        white-space: nowrap;
+        justify-content: center;
+    }
+    #floating_logo_div{
+        margin-right: 0px;
+    }
+    #text_overlay {
+        width: 80vw;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+      }
+} 
